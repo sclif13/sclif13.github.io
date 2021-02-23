@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>y on ИТ заметки</title>
-    <link>//sclif.pro/categories/y/</link>
+    <link>//sclif13.github.io/categories/y/</link>
     <description>Recent content in y on ИТ заметки</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
-    <lastBuildDate>Sat, 08 Jul 2017 12:38:48 +0500</lastBuildDate>
-    
-	<atom:link href="//sclif.pro/categories/y/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 08 Jul 2017 12:38:48 +0500</lastBuildDate><atom:link href="//sclif13.github.io/categories/y/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Проекты</title>
-      <link>//sclif.pro/projects/</link>
+      <link>//sclif13.github.io/projects/</link>
       <pubDate>Sat, 08 Jul 2017 12:38:48 +0500</pubDate>
       
-      <guid>//sclif.pro/projects/</guid>
+      <guid>//sclif13.github.io/projects/</guid>
       <description>Некоторые из проектов, в которых я принимал участие.
 Автоматизированная система проведения экзаменов
 Система создана для проведения дистанционных экзаменов на базе образовательных учреждений.
@@ -32,10 +28,10 @@ Callback Power https://cbp.kz
     
     <item>
       <title>О себе...</title>
-      <link>//sclif.pro/about/</link>
+      <link>//sclif13.github.io/about/</link>
       <pubDate>Sat, 25 Feb 2017 00:06:48 +0500</pubDate>
       
-      <guid>//sclif.pro/about/</guid>
+      <guid>//sclif13.github.io/about/</guid>
       <description>Меня зовут Александр. Я работаю в сфере ИТ более 20 лет .
 В данный момент я занимаюсь:
  разработкой бизнес приложений и сервисов web программированием на javascript, node.js, react.js, redux, blank  Контакты:

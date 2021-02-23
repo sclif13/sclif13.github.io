@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "//sclif.pro/"
+baseurl = "//sclif13.github.io/"
 # HTML Language Code Reference, such as en, zh-cn
 languageCode = "ru-ru"
 publishDir = "docs"
@@ -9,7 +9,7 @@ theme = "hugo-theme-cactus-plus"
 googleAnalytics = "UA-30560332-1"
 
 [params]
-	name = "Sclif.pro"
+	name = "sclif13.github.io"
 	description = "ИТ заметки"
 	bio = "ИТ заметки"
 	# Enter optionally your twitter account
@@ -17,7 +17,7 @@ googleAnalytics = "UA-30560332-1"
 	enableRSS = false
 
 	# Disqus comment
-	disqusShortname = "sclif-pro"
+	# disqusShortname = "sclif-pro"
 	# Disable disqus comments by set `enableDisqus = "false"`
 	enableDisqus = false
 

@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>web on ИТ заметки</title>
-    <link>//sclif.pro/tags/web/</link>
+    <link>//sclif13.github.io/tags/web/</link>
     <description>Recent content in web on ИТ заметки</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
-    <lastBuildDate>Sat, 15 Jun 2019 12:33:54 +0500</lastBuildDate>
-    
-	<atom:link href="//sclif.pro/tags/web/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 15 Jun 2019 12:33:54 +0500</lastBuildDate><atom:link href="//sclif13.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Web Audio Player</title>
-      <link>//sclif.pro/post/2019-06-15-web-audio-player/</link>
+      <link>//sclif13.github.io/post/2019-06-15-web-audio-player/</link>
       <pubDate>Sat, 15 Jun 2019 12:33:54 +0500</pubDate>
       
-      <guid>//sclif.pro/post/2019-06-15-web-audio-player/</guid>
+      <guid>//sclif13.github.io/post/2019-06-15-web-audio-player/</guid>
       <description>Web audio плеер (React) из проекта просмотра CDR записей. Может проигрывать определенные выделенные участки, а также пропускать участки, где уровень звука меньше необходимого порога. Порог регулируется рычажком справа.   </description>
     </item>
     

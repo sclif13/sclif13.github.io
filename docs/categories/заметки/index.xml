@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Заметки on ИТ заметки</title>
-    <link>//sclif.pro/categories/%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B8/</link>
+    <link>//sclif13.github.io/categories/%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B8/</link>
     <description>Recent content in Заметки on ИТ заметки</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
-    <lastBuildDate>Sun, 13 Sep 2015 08:41:19 +0000</lastBuildDate>
-    
-	<atom:link href="//sclif.pro/categories/%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B8/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 13 Sep 2015 08:41:19 +0000</lastBuildDate><atom:link href="//sclif13.github.io/categories/%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker Asterisk WebRTC</title>
-      <link>//sclif.pro/post/2015-09-13-docker-asterisk-webrtc/</link>
+      <link>//sclif13.github.io/post/2015-09-13-docker-asterisk-webrtc/</link>
       <pubDate>Sun, 13 Sep 2015 08:41:19 +0000</pubDate>
       
-      <guid>//sclif.pro/post/2015-09-13-docker-asterisk-webrtc/</guid>
+      <guid>//sclif13.github.io/post/2015-09-13-docker-asterisk-webrtc/</guid>
       <description>После нескольких часов экспериментов я создал docker imageна основе Centos 6 и Asterisk 13.5.0. Вышел он довольно увесистый в 1.3 Гб. Собран с поддержкой WebRTC.
 Как пользоваться?
 Качаем готовый image c hub.docker.com:
@@ -26,10 +22,10 @@ docker run -d -t --name=asterisk -p 5060:5060/udp \ -p 10000-10200:10000-10200/u
     
     <item>
       <title>Django замена повторяющихся слэшей в url</title>
-      <link>//sclif.pro/post/2015-04-06-python-django-%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0-%D0%BF%D0%BE%D0%B2%D1%82%D0%BE%D1%80%D1%8F%D1%8E%D1%89%D0%B8%D1%85%D1%81%D1%8F-%D1%81%D0%BB%D1%8D%D1%88%D0%B5%D0%B8%CC%86-%D0%B2-url/</link>
+      <link>//sclif13.github.io/post/2015-04-06-python-django-%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0-%D0%BF%D0%BE%D0%B2%D1%82%D0%BE%D1%80%D1%8F%D1%8E%D1%89%D0%B8%D1%85%D1%81%D1%8F-%D1%81%D0%BB%D1%8D%D1%88%D0%B5%D0%B8%CC%86-%D0%B2-url/</link>
       <pubDate>Mon, 06 Apr 2015 17:35:12 +0000</pubDate>
       
-      <guid>//sclif.pro/post/2015-04-06-python-django-%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0-%D0%BF%D0%BE%D0%B2%D1%82%D0%BE%D1%80%D1%8F%D1%8E%D1%89%D0%B8%D1%85%D1%81%D1%8F-%D1%81%D0%BB%D1%8D%D1%88%D0%B5%D0%B8%CC%86-%D0%B2-url/</guid>
+      <guid>//sclif13.github.io/post/2015-04-06-python-django-%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0-%D0%BF%D0%BE%D0%B2%D1%82%D0%BE%D1%80%D1%8F%D1%8E%D1%89%D0%B8%D1%85%D1%81%D1%8F-%D1%81%D0%BB%D1%8D%D1%88%D0%B5%D0%B8%CC%86-%D0%B2-url/</guid>
       <description>Возникла необходимость удалять слэши в url. Пример:
 http://example.com/// http://example.com/one//two// Решение довольно простое. В ursl.py пишем
 url(r&#39;\/{2,}&#39;, &#39;views.redirect_to&#39;), Тем самым производим поиск r’/{2,}’ слэшей от 2 и более. Далее совершаем замену на один слэш.
@@ -39,20 +35,20 @@ import re def redirect_to(request): return redirect(re.sub(r&#39;\/{2,}&#39;, &#
     
     <item>
       <title>Opensips &#43; Netup UTM5</title>
-      <link>//sclif.pro/post/2014-12-23-opensips-netup-utm5/</link>
+      <link>//sclif13.github.io/post/2014-12-23-opensips-netup-utm5/</link>
       <pubDate>Mon, 22 Dec 2014 20:57:23 +0000</pubDate>
       
-      <guid>//sclif.pro/post/2014-12-23-opensips-netup-utm5/</guid>
+      <guid>//sclif13.github.io/post/2014-12-23-opensips-netup-utm5/</guid>
       <description>В преддверии нового 2015 года решил поделиться своим опытом и опытом моего коллеги Евгения.
 Уже давно у меня были попытки связать Kamailio/Opensips с различными биллингами с помощью протокола Radius. Стандартные модули позволяют это сделать, но не могут прочитать ответ от radius сервера, потому как требуют ответ в формате SIP-AVP. И вот начиная с версии 1.6 в opensips появился модуль aaa_radius. Сложность использования данного модуля в том, что нам необходимо самим настроить radius пакет Access-Request.</description>
     </item>
     
     <item>
       <title>Freeswitch &#43; mod_xml_radius &#43; Netup UTM5</title>
-      <link>//sclif.pro/post/2014-06-28-freeswitch-mod_xml_radius-netup-utm5/</link>
+      <link>//sclif13.github.io/post/2014-06-28-freeswitch-mod_xml_radius-netup-utm5/</link>
       <pubDate>Sat, 28 Jun 2014 16:47:56 +0000</pubDate>
       
-      <guid>//sclif.pro/post/2014-06-28-freeswitch-mod_xml_radius-netup-utm5/</guid>
+      <guid>//sclif13.github.io/post/2014-06-28-freeswitch-mod_xml_radius-netup-utm5/</guid>
       <description>Обратились ко мне с просьбой настроить связку Freeswitch + mod_xml_radius + Netup UTM5. Ну собственно сам процесс.
 Про то как устанавливать Freeswitch и Netup UTM5 описано в документации. Скажу только, что Freeswitch установил из пакетов, а модуль mod_xml_radius скомпилировал из исходников.
 Теперь настраиваем mod_xml_radius.
@@ -61,10 +57,10 @@ import re def redirect_to(request): return redirect(re.sub(r&#39;\/{2,}&#39;, &#
     
     <item>
       <title>Вывод времени на английском на perl.</title>
-      <link>//sclif.pro/post/2013-06-24-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8-%D0%BD%D0%B0-%D0%B0%D0%BD%D0%B3%D0%BB%D0%B8%D0%B8%CC%86%D1%81%D0%BA%D0%BE%D0%BC-%D0%BD%D0%B0-perl/</link>
+      <link>//sclif13.github.io/post/2013-06-24-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8-%D0%BD%D0%B0-%D0%B0%D0%BD%D0%B3%D0%BB%D0%B8%D0%B8%CC%86%D1%81%D0%BA%D0%BE%D0%BC-%D0%BD%D0%B0-perl/</link>
       <pubDate>Mon, 24 Jun 2013 06:52:40 +0000</pubDate>
       
-      <guid>//sclif.pro/post/2013-06-24-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8-%D0%BD%D0%B0-%D0%B0%D0%BD%D0%B3%D0%BB%D0%B8%D0%B8%CC%86%D1%81%D0%BA%D0%BE%D0%BC-%D0%BD%D0%B0-perl/</guid>
+      <guid>//sclif13.github.io/post/2013-06-24-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8-%D0%BD%D0%B0-%D0%B0%D0%BD%D0%B3%D0%BB%D0%B8%D0%B8%CC%86%D1%81%D0%BA%D0%BE%D0%BC-%D0%BD%D0%B0-perl/</guid>
       <description>Появилась задача вывести время на английском в русской локали ru_RU.UTF-8.
 Date: Mon, 24 Jun 2013 12:39:08 +0600
 #!/usr/bin/perl use POSIX; setlocale(LC_TIME,&amp;quot;C&amp;quot;); print &amp;quot;Date: &amp;quot; . strftime(&amp;quot;%a, %d %b %Y %H:%M:%S %z&amp;quot;, localtime) . &amp;quot;\n&amp;quot;; </description>

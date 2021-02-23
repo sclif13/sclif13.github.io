@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Разное on ИТ заметки</title>
-    <link>//sclif.pro/categories/%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D0%B5/</link>
+    <link>//sclif13.github.io/categories/%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D0%B5/</link>
     <description>Recent content in Разное on ИТ заметки</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
-    <lastBuildDate>Thu, 12 Mar 2015 18:12:31 +0000</lastBuildDate>
-    
-	<atom:link href="//sclif.pro/categories/%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D0%B5/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 12 Mar 2015 18:12:31 +0000</lastBuildDate><atom:link href="//sclif13.github.io/categories/%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D0%B5/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wireshark в docker</title>
-      <link>//sclif.pro/post/2015-03-12-wireshark-%D0%B2-docker/</link>
+      <link>//sclif13.github.io/post/2015-03-12-wireshark-%D0%B2-docker/</link>
       <pubDate>Thu, 12 Mar 2015 18:12:31 +0000</pubDate>
       
-      <guid>//sclif.pro/post/2015-03-12-wireshark-%D0%B2-docker/</guid>
+      <guid>//sclif13.github.io/post/2015-03-12-wireshark-%D0%B2-docker/</guid>
       <description>Не давно столкнулся с проблемой установки wireshark 1.12 из исходников на ubuntu desktop 14.04, а точнее был конфликт между библиотеками Xserver. Так как я по большой части использую wireshark для наглядного разбора, а статистику собираю через tcpdump, то решил создать wireshark в docker.
 Dockerfile https://github.com/sclif13/docker-wireshark
 Статья в помощь по запуску http://habrahabr.ru/post/240509/</description>
@@ -24,10 +20,10 @@ Dockerfile https://github.com/sclif13/docker-wireshark
     
     <item>
       <title>Wifi Hotspot на основе Netup UTM5 &#43; Mikrotik</title>
-      <link>//sclif.pro/post/2013-10-06-wifi-hotspot-%D0%BD%D0%B0-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B5-netup-utm5-mikrotik/</link>
+      <link>//sclif13.github.io/post/2013-10-06-wifi-hotspot-%D0%BD%D0%B0-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B5-netup-utm5-mikrotik/</link>
       <pubDate>Sun, 06 Oct 2013 17:13:22 +0000</pubDate>
       
-      <guid>//sclif.pro/post/2013-10-06-wifi-hotspot-%D0%BD%D0%B0-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B5-netup-utm5-mikrotik/</guid>
+      <guid>//sclif13.github.io/post/2013-10-06-wifi-hotspot-%D0%BD%D0%B0-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B5-netup-utm5-mikrotik/</guid>
       <description>Хочу поделиться своим опытов внедрения платного Wifi hotspot на основе биллинга Netup UTM5 и Mikrotik Hotspot. Не собираюсь открывать Америку, опишу сам концепт, а остальное додумаете или найдете на форуме.
 Берем отдельный биллинг и создаем в нем тариф или несколько тарифов с услугой Dialup. Я создал тариф 50 рублей за час с равномерным списанием в течении суток, т. е. расчетный период 1 день. Настроил mikrotik c hotspot и связал его с биллингом через Radius.</description>
     </item>

@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Perl on ИТ заметки</title>
-    <link>//sclif.pro/tags/perl/</link>
+    <link>//sclif13.github.io/tags/perl/</link>
     <description>Recent content in Perl on ИТ заметки</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
-    <lastBuildDate>Mon, 24 Jun 2013 06:52:40 +0000</lastBuildDate>
-    
-	<atom:link href="//sclif.pro/tags/perl/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 24 Jun 2013 06:52:40 +0000</lastBuildDate><atom:link href="//sclif13.github.io/tags/perl/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Вывод времени на английском на perl.</title>
-      <link>//sclif.pro/post/2013-06-24-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8-%D0%BD%D0%B0-%D0%B0%D0%BD%D0%B3%D0%BB%D0%B8%D0%B8%CC%86%D1%81%D0%BA%D0%BE%D0%BC-%D0%BD%D0%B0-perl/</link>
+      <link>//sclif13.github.io/post/2013-06-24-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8-%D0%BD%D0%B0-%D0%B0%D0%BD%D0%B3%D0%BB%D0%B8%D0%B8%CC%86%D1%81%D0%BA%D0%BE%D0%BC-%D0%BD%D0%B0-perl/</link>
       <pubDate>Mon, 24 Jun 2013 06:52:40 +0000</pubDate>
       
-      <guid>//sclif.pro/post/2013-06-24-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8-%D0%BD%D0%B0-%D0%B0%D0%BD%D0%B3%D0%BB%D0%B8%D0%B8%CC%86%D1%81%D0%BA%D0%BE%D0%BC-%D0%BD%D0%B0-perl/</guid>
+      <guid>//sclif13.github.io/post/2013-06-24-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8-%D0%BD%D0%B0-%D0%B0%D0%BD%D0%B3%D0%BB%D0%B8%D0%B8%CC%86%D1%81%D0%BA%D0%BE%D0%BC-%D0%BD%D0%B0-perl/</guid>
       <description>Появилась задача вывести время на английском в русской локали ru_RU.UTF-8.
 Date: Mon, 24 Jun 2013 12:39:08 +0600
 #!/usr/bin/perl use POSIX; setlocale(LC_TIME,&amp;quot;C&amp;quot;); print &amp;quot;Date: &amp;quot; . strftime(&amp;quot;%a, %d %b %Y %H:%M:%S %z&amp;quot;, localtime) . &amp;quot;\n&amp;quot;; </description>
@@ -24,10 +20,10 @@ Date: Mon, 24 Jun 2013 12:39:08 +0600
     
     <item>
       <title>Решено: Net::SSH::Perl Can`t bind socket to port 1023</title>
-      <link>//sclif.pro/post/2012-04-02-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%BE-netsshperl-cant-bind-socket-to-port-1023/</link>
+      <link>//sclif13.github.io/post/2012-04-02-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%BE-netsshperl-cant-bind-socket-to-port-1023/</link>
       <pubDate>Mon, 02 Apr 2012 16:42:37 +0000</pubDate>
       
-      <guid>//sclif.pro/post/2012-04-02-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%BE-netsshperl-cant-bind-socket-to-port-1023/</guid>
+      <guid>//sclif13.github.io/post/2012-04-02-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%BE-netsshperl-cant-bind-socket-to-port-1023/</guid>
       <description>Собрался написать не большой скрипт, который на удаленном сервере через ssh добавляет или удаляет правила iptables.Написал тестовый скрипт.
 use Net::SSH::Perl;my $host =&amp;quot;xx.xx.xx.xx&amp;quot;;my $user = &amp;quot;user&amp;quot;;my $pass = &amp;quot;paswd&amp;quot;;my $cmd = &amp;quot;uname -a&amp;quot;;my $ssh = Net::SSH::Perl-&amp;amp;gt;new ($host,protocol =&amp;amp;gt; 2,port =&amp;amp;gt; 22,debug =&amp;amp;gt; 1,);$ssh-&amp;amp;gt;login($user,$pass);my ($stdout, $stderr, $exit) = $ssh-&amp;amp;gt;cmd($cmd);print &amp;quot;$stdout&amp;quot;;Запустил один раз и он отработал нормально и сразу же второй раз.</description>
     </item>

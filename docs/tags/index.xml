@@ -2,210 +2,206 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on ИТ заметки</title>
-    <link>//sclif.pro/tags/</link>
+    <link>//sclif13.github.io/tags/</link>
     <description>Recent content in Tags on ИТ заметки</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
-    <lastBuildDate>Sat, 15 Jun 2019 12:33:54 +0500</lastBuildDate>
-    
-	<atom:link href="//sclif.pro/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 15 Jun 2019 12:33:54 +0500</lastBuildDate><atom:link href="//sclif13.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>asterisk</title>
-      <link>//sclif.pro/tags/asterisk/</link>
+      <title>Asterisk</title>
+      <link>//sclif13.github.io/tags/asterisk/</link>
       <pubDate>Sat, 15 Jun 2019 12:33:54 +0500</pubDate>
       
-      <guid>//sclif.pro/tags/asterisk/</guid>
+      <guid>//sclif13.github.io/tags/asterisk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>audio</title>
-      <link>//sclif.pro/tags/audio/</link>
+      <link>//sclif13.github.io/tags/audio/</link>
       <pubDate>Sat, 15 Jun 2019 12:33:54 +0500</pubDate>
       
-      <guid>//sclif.pro/tags/audio/</guid>
+      <guid>//sclif13.github.io/tags/audio/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Freeswitch</title>
-      <link>//sclif.pro/tags/freeswitch/</link>
+      <link>//sclif13.github.io/tags/freeswitch/</link>
       <pubDate>Sat, 15 Jun 2019 12:33:54 +0500</pubDate>
       
-      <guid>//sclif.pro/tags/freeswitch/</guid>
+      <guid>//sclif13.github.io/tags/freeswitch/</guid>
       <description></description>
     </item>
     
     <item>
       <title>react</title>
-      <link>//sclif.pro/tags/react/</link>
+      <link>//sclif13.github.io/tags/react/</link>
       <pubDate>Sat, 15 Jun 2019 12:33:54 +0500</pubDate>
       
-      <guid>//sclif.pro/tags/react/</guid>
+      <guid>//sclif13.github.io/tags/react/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Voip</title>
-      <link>//sclif.pro/tags/voip/</link>
+      <link>//sclif13.github.io/tags/voip/</link>
       <pubDate>Sat, 15 Jun 2019 12:33:54 +0500</pubDate>
       
-      <guid>//sclif.pro/tags/voip/</guid>
+      <guid>//sclif13.github.io/tags/voip/</guid>
       <description></description>
     </item>
     
     <item>
       <title>web</title>
-      <link>//sclif.pro/tags/web/</link>
+      <link>//sclif13.github.io/tags/web/</link>
       <pubDate>Sat, 15 Jun 2019 12:33:54 +0500</pubDate>
       
-      <guid>//sclif.pro/tags/web/</guid>
+      <guid>//sclif13.github.io/tags/web/</guid>
       <description></description>
     </item>
     
     <item>
       <title>projects</title>
-      <link>//sclif.pro/tags/projects/</link>
+      <link>//sclif13.github.io/tags/projects/</link>
       <pubDate>Sat, 08 Jul 2017 12:38:48 +0500</pubDate>
       
-      <guid>//sclif.pro/tags/projects/</guid>
+      <guid>//sclif13.github.io/tags/projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>about</title>
-      <link>//sclif.pro/tags/about/</link>
+      <link>//sclif13.github.io/tags/about/</link>
       <pubDate>Sat, 25 Feb 2017 00:06:48 +0500</pubDate>
       
-      <guid>//sclif.pro/tags/about/</guid>
+      <guid>//sclif13.github.io/tags/about/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Docker</title>
-      <link>//sclif.pro/tags/docker/</link>
+      <link>//sclif13.github.io/tags/docker/</link>
       <pubDate>Sun, 13 Sep 2015 08:41:19 +0000</pubDate>
       
-      <guid>//sclif.pro/tags/docker/</guid>
+      <guid>//sclif13.github.io/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>linux</title>
-      <link>//sclif.pro/tags/linux/</link>
+      <link>//sclif13.github.io/tags/linux/</link>
       <pubDate>Sun, 13 Sep 2015 08:41:19 +0000</pubDate>
       
-      <guid>//sclif.pro/tags/linux/</guid>
+      <guid>//sclif13.github.io/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>sip</title>
-      <link>//sclif.pro/tags/sip/</link>
+      <link>//sclif13.github.io/tags/sip/</link>
       <pubDate>Sun, 13 Sep 2015 08:41:19 +0000</pubDate>
       
-      <guid>//sclif.pro/tags/sip/</guid>
+      <guid>//sclif13.github.io/tags/sip/</guid>
       <description></description>
     </item>
     
     <item>
       <title>WEBRTC</title>
-      <link>//sclif.pro/tags/webrtc/</link>
+      <link>//sclif13.github.io/tags/webrtc/</link>
       <pubDate>Sun, 13 Sep 2015 08:41:19 +0000</pubDate>
       
-      <guid>//sclif.pro/tags/webrtc/</guid>
+      <guid>//sclif13.github.io/tags/webrtc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>django</title>
-      <link>//sclif.pro/tags/django/</link>
+      <link>//sclif13.github.io/tags/django/</link>
       <pubDate>Mon, 06 Apr 2015 17:35:12 +0000</pubDate>
       
-      <guid>//sclif.pro/tags/django/</guid>
+      <guid>//sclif13.github.io/tags/django/</guid>
       <description></description>
     </item>
     
     <item>
       <title>python</title>
-      <link>//sclif.pro/tags/python/</link>
+      <link>//sclif13.github.io/tags/python/</link>
       <pubDate>Mon, 06 Apr 2015 17:35:12 +0000</pubDate>
       
-      <guid>//sclif.pro/tags/python/</guid>
+      <guid>//sclif13.github.io/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>billing</title>
-      <link>//sclif.pro/tags/billing/</link>
+      <link>//sclif13.github.io/tags/billing/</link>
       <pubDate>Mon, 22 Dec 2014 20:57:23 +0000</pubDate>
       
-      <guid>//sclif.pro/tags/billing/</guid>
+      <guid>//sclif13.github.io/tags/billing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>opensips</title>
-      <link>//sclif.pro/tags/opensips/</link>
+      <link>//sclif13.github.io/tags/opensips/</link>
       <pubDate>Mon, 22 Dec 2014 20:57:23 +0000</pubDate>
       
-      <guid>//sclif.pro/tags/opensips/</guid>
+      <guid>//sclif13.github.io/tags/opensips/</guid>
       <description></description>
     </item>
     
     <item>
       <title>radius</title>
-      <link>//sclif.pro/tags/radius/</link>
+      <link>//sclif13.github.io/tags/radius/</link>
       <pubDate>Mon, 22 Dec 2014 20:57:23 +0000</pubDate>
       
-      <guid>//sclif.pro/tags/radius/</guid>
+      <guid>//sclif13.github.io/tags/radius/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Perl</title>
-      <link>//sclif.pro/tags/perl/</link>
+      <link>//sclif13.github.io/tags/perl/</link>
       <pubDate>Mon, 24 Jun 2013 06:52:40 +0000</pubDate>
       
-      <guid>//sclif.pro/tags/perl/</guid>
+      <guid>//sclif13.github.io/tags/perl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>calc</title>
-      <link>//sclif.pro/tags/calc/</link>
+      <link>//sclif13.github.io/tags/calc/</link>
       <pubDate>Mon, 02 Apr 2012 16:23:14 +0000</pubDate>
       
-      <guid>//sclif.pro/tags/calc/</guid>
+      <guid>//sclif13.github.io/tags/calc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>openoffice</title>
-      <link>//sclif.pro/tags/openoffice/</link>
+      <link>//sclif13.github.io/tags/openoffice/</link>
       <pubDate>Mon, 02 Apr 2012 16:23:14 +0000</pubDate>
       
-      <guid>//sclif.pro/tags/openoffice/</guid>
+      <guid>//sclif13.github.io/tags/openoffice/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DBF</title>
-      <link>//sclif.pro/tags/dbf/</link>
+      <link>//sclif13.github.io/tags/dbf/</link>
       <pubDate>Mon, 02 Apr 2012 16:11:55 +0000</pubDate>
       
-      <guid>//sclif.pro/tags/dbf/</guid>
+      <guid>//sclif13.github.io/tags/dbf/</guid>
       <description></description>
     </item>
     
     <item>
       <title>XLS</title>
-      <link>//sclif.pro/tags/xls/</link>
+      <link>//sclif13.github.io/tags/xls/</link>
       <pubDate>Mon, 02 Apr 2012 16:11:55 +0000</pubDate>
       
-      <guid>//sclif.pro/tags/xls/</guid>
+      <guid>//sclif13.github.io/tags/xls/</guid>
       <description></description>
     </item>
     

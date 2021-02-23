@@ -2,30 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Voip on ИТ заметки</title>
-    <link>//sclif.pro/tags/voip/</link>
+    <link>//sclif13.github.io/tags/voip/</link>
     <description>Recent content in Voip on ИТ заметки</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
-    <lastBuildDate>Sat, 15 Jun 2019 12:33:54 +0500</lastBuildDate>
-    
-	<atom:link href="//sclif.pro/tags/voip/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 15 Jun 2019 12:33:54 +0500</lastBuildDate><atom:link href="//sclif13.github.io/tags/voip/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Web Audio Player</title>
-      <link>//sclif.pro/post/2019-06-15-web-audio-player/</link>
+      <link>//sclif13.github.io/post/2019-06-15-web-audio-player/</link>
       <pubDate>Sat, 15 Jun 2019 12:33:54 +0500</pubDate>
       
-      <guid>//sclif.pro/post/2019-06-15-web-audio-player/</guid>
+      <guid>//sclif13.github.io/post/2019-06-15-web-audio-player/</guid>
       <description>Web audio плеер (React) из проекта просмотра CDR записей. Может проигрывать определенные выделенные участки, а также пропускать участки, где уровень звука меньше необходимого порога. Порог регулируется рычажком справа.   </description>
     </item>
     
     <item>
       <title>Docker Asterisk WebRTC</title>
-      <link>//sclif.pro/post/2015-09-13-docker-asterisk-webrtc/</link>
+      <link>//sclif13.github.io/post/2015-09-13-docker-asterisk-webrtc/</link>
       <pubDate>Sun, 13 Sep 2015 08:41:19 +0000</pubDate>
       
-      <guid>//sclif.pro/post/2015-09-13-docker-asterisk-webrtc/</guid>
+      <guid>//sclif13.github.io/post/2015-09-13-docker-asterisk-webrtc/</guid>
       <description>После нескольких часов экспериментов я создал docker imageна основе Centos 6 и Asterisk 13.5.0. Вышел он довольно увесистый в 1.3 Гб. Собран с поддержкой WebRTC.
 Как пользоваться?
 Качаем готовый image c hub.docker.com:
@@ -35,20 +31,20 @@ docker run -d -t --name=asterisk -p 5060:5060/udp \ -p 10000-10200:10000-10200/u
     
     <item>
       <title>Opensips &#43; Netup UTM5</title>
-      <link>//sclif.pro/post/2014-12-23-opensips-netup-utm5/</link>
+      <link>//sclif13.github.io/post/2014-12-23-opensips-netup-utm5/</link>
       <pubDate>Mon, 22 Dec 2014 20:57:23 +0000</pubDate>
       
-      <guid>//sclif.pro/post/2014-12-23-opensips-netup-utm5/</guid>
+      <guid>//sclif13.github.io/post/2014-12-23-opensips-netup-utm5/</guid>
       <description>В преддверии нового 2015 года решил поделиться своим опытом и опытом моего коллеги Евгения.
 Уже давно у меня были попытки связать Kamailio/Opensips с различными биллингами с помощью протокола Radius. Стандартные модули позволяют это сделать, но не могут прочитать ответ от radius сервера, потому как требуют ответ в формате SIP-AVP. И вот начиная с версии 1.6 в opensips появился модуль aaa_radius. Сложность использования данного модуля в том, что нам необходимо самим настроить radius пакет Access-Request.</description>
     </item>
     
     <item>
       <title>Freeswitch &#43; mod_xml_radius &#43; Netup UTM5</title>
-      <link>//sclif.pro/post/2014-06-28-freeswitch-mod_xml_radius-netup-utm5/</link>
+      <link>//sclif13.github.io/post/2014-06-28-freeswitch-mod_xml_radius-netup-utm5/</link>
       <pubDate>Sat, 28 Jun 2014 16:47:56 +0000</pubDate>
       
-      <guid>//sclif.pro/post/2014-06-28-freeswitch-mod_xml_radius-netup-utm5/</guid>
+      <guid>//sclif13.github.io/post/2014-06-28-freeswitch-mod_xml_radius-netup-utm5/</guid>
       <description>Обратились ко мне с просьбой настроить связку Freeswitch + mod_xml_radius + Netup UTM5. Ну собственно сам процесс.
 Про то как устанавливать Freeswitch и Netup UTM5 описано в документации. Скажу только, что Freeswitch установил из пакетов, а модуль mod_xml_radius скомпилировал из исходников.
 Теперь настраиваем mod_xml_radius.

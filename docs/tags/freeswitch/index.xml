@@ -2,30 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Freeswitch on ИТ заметки</title>
-    <link>//sclif.pro/tags/freeswitch/</link>
+    <link>//sclif13.github.io/tags/freeswitch/</link>
     <description>Recent content in Freeswitch on ИТ заметки</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
-    <lastBuildDate>Sat, 15 Jun 2019 12:33:54 +0500</lastBuildDate>
-    
-	<atom:link href="//sclif.pro/tags/freeswitch/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 15 Jun 2019 12:33:54 +0500</lastBuildDate><atom:link href="//sclif13.github.io/tags/freeswitch/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Web Audio Player</title>
-      <link>//sclif.pro/post/2019-06-15-web-audio-player/</link>
+      <link>//sclif13.github.io/post/2019-06-15-web-audio-player/</link>
       <pubDate>Sat, 15 Jun 2019 12:33:54 +0500</pubDate>
       
-      <guid>//sclif.pro/post/2019-06-15-web-audio-player/</guid>
+      <guid>//sclif13.github.io/post/2019-06-15-web-audio-player/</guid>
       <description>Web audio плеер (React) из проекта просмотра CDR записей. Может проигрывать определенные выделенные участки, а также пропускать участки, где уровень звука меньше необходимого порога. Порог регулируется рычажком справа.   </description>
     </item>
     
     <item>
       <title>Freeswitch &#43; mod_xml_radius &#43; Netup UTM5</title>
-      <link>//sclif.pro/post/2014-06-28-freeswitch-mod_xml_radius-netup-utm5/</link>
+      <link>//sclif13.github.io/post/2014-06-28-freeswitch-mod_xml_radius-netup-utm5/</link>
       <pubDate>Sat, 28 Jun 2014 16:47:56 +0000</pubDate>
       
-      <guid>//sclif.pro/post/2014-06-28-freeswitch-mod_xml_radius-netup-utm5/</guid>
+      <guid>//sclif13.github.io/post/2014-06-28-freeswitch-mod_xml_radius-netup-utm5/</guid>
       <description>Обратились ко мне с просьбой настроить связку Freeswitch + mod_xml_radius + Netup UTM5. Ну собственно сам процесс.
 Про то как устанавливать Freeswitch и Netup UTM5 описано в документации. Скажу только, что Freeswitch установил из пакетов, а модуль mod_xml_radius скомпилировал из исходников.
 Теперь настраиваем mod_xml_radius.

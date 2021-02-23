@@ -2,30 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on ИТ заметки</title>
-    <link>//sclif.pro/post/</link>
+    <link>//sclif13.github.io/post/</link>
     <description>Recent content in Posts on ИТ заметки</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
-    <lastBuildDate>Sat, 15 Jun 2019 12:33:54 +0500</lastBuildDate>
-    
-	<atom:link href="//sclif.pro/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 15 Jun 2019 12:33:54 +0500</lastBuildDate><atom:link href="//sclif13.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Web Audio Player</title>
-      <link>//sclif.pro/post/2019-06-15-web-audio-player/</link>
+      <link>//sclif13.github.io/post/2019-06-15-web-audio-player/</link>
       <pubDate>Sat, 15 Jun 2019 12:33:54 +0500</pubDate>
       
-      <guid>//sclif.pro/post/2019-06-15-web-audio-player/</guid>
+      <guid>//sclif13.github.io/post/2019-06-15-web-audio-player/</guid>
       <description>Web audio плеер (React) из проекта просмотра CDR записей. Может проигрывать определенные выделенные участки, а также пропускать участки, где уровень звука меньше необходимого порога. Порог регулируется рычажком справа.   </description>
     </item>
     
     <item>
       <title>Docker Asterisk WebRTC</title>
-      <link>//sclif.pro/post/2015-09-13-docker-asterisk-webrtc/</link>
+      <link>//sclif13.github.io/post/2015-09-13-docker-asterisk-webrtc/</link>
       <pubDate>Sun, 13 Sep 2015 08:41:19 +0000</pubDate>
       
-      <guid>//sclif.pro/post/2015-09-13-docker-asterisk-webrtc/</guid>
+      <guid>//sclif13.github.io/post/2015-09-13-docker-asterisk-webrtc/</guid>
       <description>После нескольких часов экспериментов я создал docker imageна основе Centos 6 и Asterisk 13.5.0. Вышел он довольно увесистый в 1.3 Гб. Собран с поддержкой WebRTC.
 Как пользоваться?
 Качаем готовый image c hub.docker.com:
@@ -35,10 +31,10 @@ docker run -d -t --name=asterisk -p 5060:5060/udp \ -p 10000-10200:10000-10200/u
     
     <item>
       <title>Django замена повторяющихся слэшей в url</title>
-      <link>//sclif.pro/post/2015-04-06-python-django-%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0-%D0%BF%D0%BE%D0%B2%D1%82%D0%BE%D1%80%D1%8F%D1%8E%D1%89%D0%B8%D1%85%D1%81%D1%8F-%D1%81%D0%BB%D1%8D%D1%88%D0%B5%D0%B8%CC%86-%D0%B2-url/</link>
+      <link>//sclif13.github.io/post/2015-04-06-python-django-%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0-%D0%BF%D0%BE%D0%B2%D1%82%D0%BE%D1%80%D1%8F%D1%8E%D1%89%D0%B8%D1%85%D1%81%D1%8F-%D1%81%D0%BB%D1%8D%D1%88%D0%B5%D0%B8%CC%86-%D0%B2-url/</link>
       <pubDate>Mon, 06 Apr 2015 17:35:12 +0000</pubDate>
       
-      <guid>//sclif.pro/post/2015-04-06-python-django-%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0-%D0%BF%D0%BE%D0%B2%D1%82%D0%BE%D1%80%D1%8F%D1%8E%D1%89%D0%B8%D1%85%D1%81%D1%8F-%D1%81%D0%BB%D1%8D%D1%88%D0%B5%D0%B8%CC%86-%D0%B2-url/</guid>
+      <guid>//sclif13.github.io/post/2015-04-06-python-django-%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0-%D0%BF%D0%BE%D0%B2%D1%82%D0%BE%D1%80%D1%8F%D1%8E%D1%89%D0%B8%D1%85%D1%81%D1%8F-%D1%81%D0%BB%D1%8D%D1%88%D0%B5%D0%B8%CC%86-%D0%B2-url/</guid>
       <description>Возникла необходимость удалять слэши в url. Пример:
 http://example.com/// http://example.com/one//two// Решение довольно простое. В ursl.py пишем
 url(r&#39;\/{2,}&#39;, &#39;views.redirect_to&#39;), Тем самым производим поиск r’/{2,}’ слэшей от 2 и более. Далее совершаем замену на один слэш.
@@ -48,10 +44,10 @@ import re def redirect_to(request): return redirect(re.sub(r&#39;\/{2,}&#39;, &#
     
     <item>
       <title>Wireshark в docker</title>
-      <link>//sclif.pro/post/2015-03-12-wireshark-%D0%B2-docker/</link>
+      <link>//sclif13.github.io/post/2015-03-12-wireshark-%D0%B2-docker/</link>
       <pubDate>Thu, 12 Mar 2015 18:12:31 +0000</pubDate>
       
-      <guid>//sclif.pro/post/2015-03-12-wireshark-%D0%B2-docker/</guid>
+      <guid>//sclif13.github.io/post/2015-03-12-wireshark-%D0%B2-docker/</guid>
       <description>Не давно столкнулся с проблемой установки wireshark 1.12 из исходников на ubuntu desktop 14.04, а точнее был конфликт между библиотеками Xserver. Так как я по большой части использую wireshark для наглядного разбора, а статистику собираю через tcpdump, то решил создать wireshark в docker.
 Dockerfile https://github.com/sclif13/docker-wireshark
 Статья в помощь по запуску http://habrahabr.ru/post/240509/</description>
@@ -59,20 +55,20 @@ Dockerfile https://github.com/sclif13/docker-wireshark
     
     <item>
       <title>Opensips &#43; Netup UTM5</title>
-      <link>//sclif.pro/post/2014-12-23-opensips-netup-utm5/</link>
+      <link>//sclif13.github.io/post/2014-12-23-opensips-netup-utm5/</link>
       <pubDate>Mon, 22 Dec 2014 20:57:23 +0000</pubDate>
       
-      <guid>//sclif.pro/post/2014-12-23-opensips-netup-utm5/</guid>
+      <guid>//sclif13.github.io/post/2014-12-23-opensips-netup-utm5/</guid>
       <description>В преддверии нового 2015 года решил поделиться своим опытом и опытом моего коллеги Евгения.
 Уже давно у меня были попытки связать Kamailio/Opensips с различными биллингами с помощью протокола Radius. Стандартные модули позволяют это сделать, но не могут прочитать ответ от radius сервера, потому как требуют ответ в формате SIP-AVP. И вот начиная с версии 1.6 в opensips появился модуль aaa_radius. Сложность использования данного модуля в том, что нам необходимо самим настроить radius пакет Access-Request.</description>
     </item>
     
     <item>
       <title>Freeswitch &#43; mod_xml_radius &#43; Netup UTM5</title>
-      <link>//sclif.pro/post/2014-06-28-freeswitch-mod_xml_radius-netup-utm5/</link>
+      <link>//sclif13.github.io/post/2014-06-28-freeswitch-mod_xml_radius-netup-utm5/</link>
       <pubDate>Sat, 28 Jun 2014 16:47:56 +0000</pubDate>
       
-      <guid>//sclif.pro/post/2014-06-28-freeswitch-mod_xml_radius-netup-utm5/</guid>
+      <guid>//sclif13.github.io/post/2014-06-28-freeswitch-mod_xml_radius-netup-utm5/</guid>
       <description>Обратились ко мне с просьбой настроить связку Freeswitch + mod_xml_radius + Netup UTM5. Ну собственно сам процесс.
 Про то как устанавливать Freeswitch и Netup UTM5 описано в документации. Скажу только, что Freeswitch установил из пакетов, а модуль mod_xml_radius скомпилировал из исходников.
 Теперь настраиваем mod_xml_radius.
@@ -81,20 +77,20 @@ Dockerfile https://github.com/sclif13/docker-wireshark
     
     <item>
       <title>Wifi Hotspot на основе Netup UTM5 &#43; Mikrotik</title>
-      <link>//sclif.pro/post/2013-10-06-wifi-hotspot-%D0%BD%D0%B0-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B5-netup-utm5-mikrotik/</link>
+      <link>//sclif13.github.io/post/2013-10-06-wifi-hotspot-%D0%BD%D0%B0-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B5-netup-utm5-mikrotik/</link>
       <pubDate>Sun, 06 Oct 2013 17:13:22 +0000</pubDate>
       
-      <guid>//sclif.pro/post/2013-10-06-wifi-hotspot-%D0%BD%D0%B0-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B5-netup-utm5-mikrotik/</guid>
+      <guid>//sclif13.github.io/post/2013-10-06-wifi-hotspot-%D0%BD%D0%B0-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B5-netup-utm5-mikrotik/</guid>
       <description>Хочу поделиться своим опытов внедрения платного Wifi hotspot на основе биллинга Netup UTM5 и Mikrotik Hotspot. Не собираюсь открывать Америку, опишу сам концепт, а остальное додумаете или найдете на форуме.
 Берем отдельный биллинг и создаем в нем тариф или несколько тарифов с услугой Dialup. Я создал тариф 50 рублей за час с равномерным списанием в течении суток, т. е. расчетный период 1 день. Настроил mikrotik c hotspot и связал его с биллингом через Radius.</description>
     </item>
     
     <item>
       <title>Вывод времени на английском на perl.</title>
-      <link>//sclif.pro/post/2013-06-24-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8-%D0%BD%D0%B0-%D0%B0%D0%BD%D0%B3%D0%BB%D0%B8%D0%B8%CC%86%D1%81%D0%BA%D0%BE%D0%BC-%D0%BD%D0%B0-perl/</link>
+      <link>//sclif13.github.io/post/2013-06-24-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8-%D0%BD%D0%B0-%D0%B0%D0%BD%D0%B3%D0%BB%D0%B8%D0%B8%CC%86%D1%81%D0%BA%D0%BE%D0%BC-%D0%BD%D0%B0-perl/</link>
       <pubDate>Mon, 24 Jun 2013 06:52:40 +0000</pubDate>
       
-      <guid>//sclif.pro/post/2013-06-24-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8-%D0%BD%D0%B0-%D0%B0%D0%BD%D0%B3%D0%BB%D0%B8%D0%B8%CC%86%D1%81%D0%BA%D0%BE%D0%BC-%D0%BD%D0%B0-perl/</guid>
+      <guid>//sclif13.github.io/post/2013-06-24-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8-%D0%BD%D0%B0-%D0%B0%D0%BD%D0%B3%D0%BB%D0%B8%D0%B8%CC%86%D1%81%D0%BA%D0%BE%D0%BC-%D0%BD%D0%B0-perl/</guid>
       <description>Появилась задача вывести время на английском в русской локали ru_RU.UTF-8.
 Date: Mon, 24 Jun 2013 12:39:08 +0600
 #!/usr/bin/perl use POSIX; setlocale(LC_TIME,&amp;quot;C&amp;quot;); print &amp;quot;Date: &amp;quot; . strftime(&amp;quot;%a, %d %b %Y %H:%M:%S %z&amp;quot;, localtime) . &amp;quot;\n&amp;quot;; </description>
@@ -102,10 +98,10 @@ Date: Mon, 24 Jun 2013 12:39:08 +0600
     
     <item>
       <title>Решено: USSD запрос в linux c помощью huawei e1550 (Мегафон)</title>
-      <link>//sclif.pro/post/2013-03-07-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%BE-ussd-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81-%D0%B2-linux-c-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-huawei-e1550-%D0%BC%D0%B5%D0%B3%D0%B0%D1%84%D0%BE%D0%BD/</link>
+      <link>//sclif13.github.io/post/2013-03-07-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%BE-ussd-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81-%D0%B2-linux-c-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-huawei-e1550-%D0%BC%D0%B5%D0%B3%D0%B0%D1%84%D0%BE%D0%BD/</link>
       <pubDate>Thu, 07 Mar 2013 06:48:25 +0000</pubDate>
       
-      <guid>//sclif.pro/post/2013-03-07-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%BE-ussd-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81-%D0%B2-linux-c-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-huawei-e1550-%D0%BC%D0%B5%D0%B3%D0%B0%D1%84%D0%BE%D0%BD/</guid>
+      <guid>//sclif13.github.io/post/2013-03-07-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%BE-ussd-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81-%D0%B2-linux-c-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-huawei-e1550-%D0%BC%D0%B5%D0%B3%D0%B0%D1%84%D0%BE%D0%BD/</guid>
       <description>Появилась необходимость контролировать баланс sim мегафона. Обычный ussd запрос *100# по каким-то причинам не захотел работать.
 #/usr/bin/ussd.pl -vi \*111\*1*2#
 #!/usr/bin/perluse Getopt::Std;use Device::Gsm::Pdu;use Text::Iconv;# defaults$opt_r = &amp;quot;/dev/ttyUSB2&amp;quot;;$opt_s = &amp;quot;/dev/ttyUSB0&amp;quot;;$conv = Text::Iconv-&amp;amp;gt;new(&#39;utf16be&#39;,&#39;utf8&#39;);my $USAGE = &amp;amp;lt;&amp;amp;lt;__EOU;Usage: $0 [-r input_port] [-s output_port] [-n] [-h] [-v] [-i] [-w] ussd_msgDescription:Send and receive 7-bit PDU-encoded USSD messages.Written and tested for Huawei E1550 GSM/UMTS USB modem.Options:-r port Port to receive data from.</description>
@@ -113,51 +109,51 @@ Date: Mon, 24 Jun 2013 12:39:08 +0600
     
     <item>
       <title>Костыль №2. Google Docs автоматическая сортировка в таблице.</title>
-      <link>//sclif.pro/post/2012-07-14-%D0%BA%D0%BE%D1%81%D1%82%D1%8B%D0%BB%D1%8C-2-google-docs-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D1%81%D0%BE%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2/</link>
+      <link>//sclif13.github.io/post/2012-07-14-%D0%BA%D0%BE%D1%81%D1%82%D1%8B%D0%BB%D1%8C-2-google-docs-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D1%81%D0%BE%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2/</link>
       <pubDate>Sat, 14 Jul 2012 11:53:19 +0000</pubDate>
       
-      <guid>//sclif.pro/post/2012-07-14-%D0%BA%D0%BE%D1%81%D1%82%D1%8B%D0%BB%D1%8C-2-google-docs-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D1%81%D0%BE%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2/</guid>
+      <guid>//sclif13.github.io/post/2012-07-14-%D0%BA%D0%BE%D1%81%D1%82%D1%8B%D0%BB%D1%8C-2-google-docs-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D1%81%D0%BE%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2/</guid>
       <description>Появилась задача в Google Docs автоматически сортировать определенный столбец в таблице по возрастанию, потратив 3 часа времени и перебрав пару решений из коллекции скриптов получил вот такое вот решение. Создал скрипт-триггер который срабатывает при редактировании таблицы.
 function onEdit() { var ss = SpreadsheetApp.getActiveSpreadsheet(); var range = ss.getSheets()[0].getRange(&amp;quot;A2:E255&amp;quot;); // A2:E255 диапазон сортировки range.sort({column: 5, ascending: false}); // сортировать 5 колонку по убыванию } Пример </description>
     </item>
     
     <item>
       <title>Решено: Net::SSH::Perl Can`t bind socket to port 1023</title>
-      <link>//sclif.pro/post/2012-04-02-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%BE-netsshperl-cant-bind-socket-to-port-1023/</link>
+      <link>//sclif13.github.io/post/2012-04-02-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%BE-netsshperl-cant-bind-socket-to-port-1023/</link>
       <pubDate>Mon, 02 Apr 2012 16:42:37 +0000</pubDate>
       
-      <guid>//sclif.pro/post/2012-04-02-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%BE-netsshperl-cant-bind-socket-to-port-1023/</guid>
+      <guid>//sclif13.github.io/post/2012-04-02-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%BE-netsshperl-cant-bind-socket-to-port-1023/</guid>
       <description>Собрался написать не большой скрипт, который на удаленном сервере через ssh добавляет или удаляет правила iptables.Написал тестовый скрипт.
 use Net::SSH::Perl;my $host =&amp;quot;xx.xx.xx.xx&amp;quot;;my $user = &amp;quot;user&amp;quot;;my $pass = &amp;quot;paswd&amp;quot;;my $cmd = &amp;quot;uname -a&amp;quot;;my $ssh = Net::SSH::Perl-&amp;amp;gt;new ($host,protocol =&amp;amp;gt; 2,port =&amp;amp;gt; 22,debug =&amp;amp;gt; 1,);$ssh-&amp;amp;gt;login($user,$pass);my ($stdout, $stderr, $exit) = $ssh-&amp;amp;gt;cmd($cmd);print &amp;quot;$stdout&amp;quot;;Запустил один раз и он отработал нормально и сразу же второй раз.</description>
     </item>
     
     <item>
       <title>Оо трюки</title>
-      <link>//sclif.pro/post/2012-04-02-%D0%BE%D0%BE-%D1%82%D1%80%D1%8E%D0%BA%D0%B8/</link>
+      <link>//sclif13.github.io/post/2012-04-02-%D0%BE%D0%BE-%D1%82%D1%80%D1%8E%D0%BA%D0%B8/</link>
       <pubDate>Mon, 02 Apr 2012 16:23:14 +0000</pubDate>
       
-      <guid>//sclif.pro/post/2012-04-02-%D0%BE%D0%BE-%D1%82%D1%80%D1%8E%D0%BA%D0%B8/</guid>
+      <guid>//sclif13.github.io/post/2012-04-02-%D0%BE%D0%BE-%D1%82%D1%80%D1%8E%D0%BA%D0%B8/</guid>
       <description>Пришлось редактировать большую таблицу в OpenOffice и вот какие функции мне пригодились:
-1. Как добавить в начало ячейки символ для всего столбца? Пишем следующую формулу =&amp;quot;№&amp;rdquo;&amp;amp;A1, где № — это наш символ, A1 — соответственно наша ячейка, а дальше растягиваем эту формулу сколько надо.
+1. Как добавить в начало ячейки символ для всего столбца? Пишем следующую формулу =&amp;ldquo;№&amp;rdquo;&amp;amp;A1, где № — это наш символ, A1 — соответственно наша ячейка, а дальше растягиваем эту формулу сколько надо.
  2. Как разбить текст вида 1,2,3,4,5 в одной ячейки по столбцам? Заходим в меню Данные-&amp;gt;Текст по столбцам… и там выбираем разделитель, в нашем случае запятая. Тут же видим что из этого получилось.</description>
     </item>
     
     <item>
       <title>Костыль №1.1 Перевод DBF в XLS в фоновом режиме</title>
-      <link>//sclif.pro/post/2012-04-02-%D0%BA%D0%BE%D1%81%D1%82%D1%8B%D0%BB%D1%8C-1-1-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-dbf-%D0%B2-xls-%D0%B2-%D1%84%D0%BE%D0%BD%D0%BE%D0%B2%D0%BE%D0%BC-%D1%80%D0%B5%D0%B6%D0%B8%D0%BC%D0%B5/</link>
+      <link>//sclif13.github.io/post/2012-04-02-%D0%BA%D0%BE%D1%81%D1%82%D1%8B%D0%BB%D1%8C-1-1-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-dbf-%D0%B2-xls-%D0%B2-%D1%84%D0%BE%D0%BD%D0%BE%D0%B2%D0%BE%D0%BC-%D1%80%D0%B5%D0%B6%D0%B8%D0%BC%D0%B5/</link>
       <pubDate>Mon, 02 Apr 2012 16:11:55 +0000</pubDate>
       
-      <guid>//sclif.pro/post/2012-04-02-%D0%BA%D0%BE%D1%81%D1%82%D1%8B%D0%BB%D1%8C-1-1-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-dbf-%D0%B2-xls-%D0%B2-%D1%84%D0%BE%D0%BD%D0%BE%D0%B2%D0%BE%D0%BC-%D1%80%D0%B5%D0%B6%D0%B8%D0%BC%D0%B5/</guid>
+      <guid>//sclif13.github.io/post/2012-04-02-%D0%BA%D0%BE%D1%81%D1%82%D1%8B%D0%BB%D1%8C-1-1-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-dbf-%D0%B2-xls-%D0%B2-%D1%84%D0%BE%D0%BD%D0%BE%D0%B2%D0%BE%D0%BC-%D1%80%D0%B5%D0%B6%D0%B8%D0%BC%D0%B5/</guid>
       <description>Появилось желание перевести данный костыль в фоновый режим, так как надоели открывающиеся окна. Чуть подправим процесс открытия файла, а именно сделаем его невидимым.
 &#39;Открываем DBF cURLDBF = ConvertToURL( cDbfFileToOpen ) oCalcDoc = StarDesktop.loadComponentFromURL( cURLDBF, &amp;quot;_blank&amp;quot;, 0, _ Array( MakePropertyValue( &amp;quot;FilterName&amp;quot;, &amp;quot;dBase&amp;quot;),_ MakePropertyValue( &amp;quot;FilterOptions&amp;quot;, &amp;quot;30&amp;quot; ),_ MakePropertyValue( &amp;quot;Hidden&amp;quot;, True)) ) </description>
     </item>
     
     <item>
       <title>Костыль №1 Перевод DBF в XLS</title>
-      <link>//sclif.pro/post/2012-04-02-%D0%BA%D0%BE%D1%81%D1%82%D1%8B%D0%BB%D1%8C-1-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-dbf-%D0%B2-xls/</link>
+      <link>//sclif13.github.io/post/2012-04-02-%D0%BA%D0%BE%D1%81%D1%82%D1%8B%D0%BB%D1%8C-1-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-dbf-%D0%B2-xls/</link>
       <pubDate>Mon, 02 Apr 2012 16:04:30 +0000</pubDate>
       
-      <guid>//sclif.pro/post/2012-04-02-%D0%BA%D0%BE%D1%81%D1%82%D1%8B%D0%BB%D1%8C-1-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-dbf-%D0%B2-xls/</guid>
+      <guid>//sclif13.github.io/post/2012-04-02-%D0%BA%D0%BE%D1%81%D1%82%D1%8B%D0%BB%D1%8C-1-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-dbf-%D0%B2-xls/</guid>
       <description>Решил поделиться своими костылями 🙂 Очень часто приходиться писать маленькие программки (костыли), которые выполняют какую-то рутинную работу.
 И так костыль №1. Появилась задача перевести кучу dbf файлов в xls с последующим редактированием. Конечно существуют программы, которые перекодируют dbf в xls, но они платные и не позволяют производить редактирования внутри файла. Поэтому выбор мой пал на Open Office и встроенный Basic.
 Данный макрос берет файлы dbf из папки C:\TEMP\detail\ и кладет XLS в C:\TEMP\detail\XLS\ .</description>
