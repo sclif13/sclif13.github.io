@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>y on ИТ заметки</title>
+    <link>//sclif.pro/categories/y/</link>
+    <description>Recent content in y on ИТ заметки</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-ru</language>
+    <lastBuildDate>Sat, 08 Jul 2017 12:38:48 +0500</lastBuildDate>
+    
+	<atom:link href="//sclif.pro/categories/y/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Проекты</title>
+      <link>//sclif.pro/projects/</link>
+      <pubDate>Sat, 08 Jul 2017 12:38:48 +0500</pubDate>
+      
+      <guid>//sclif.pro/projects/</guid>
+      <description>Некоторые из проектов, в которых я принимал участие.
+Автоматизированная система проведения экзаменов
+Система создана для проведения дистанционных экзаменов на базе образовательных учреждений.
+Система автоматического обзвона Peach Dialer v3
+Система обзвона по базе клиентов в 2-х режимах: автоинформатор, разговор с менеджером. Так же в ПО есть: кабинет менеджера, алгоритм определения автоответчиков, интеграция с CRM.
+Blank https://getblank.net
+Открытая платформа для разработки приложений
+Bicallback
+Сервис обратных звонков (Турция)
+Callback Power https://cbp.kz
+Сервис обратных звонков (Казахстан)</description>
+    </item>
+    
+    <item>
+      <title>О себе...</title>
+      <link>//sclif.pro/about/</link>
+      <pubDate>Sat, 25 Feb 2017 00:06:48 +0500</pubDate>
+      
+      <guid>//sclif.pro/about/</guid>
+      <description>Меня зовут Александр. Я работаю в сфере ИТ более 20 лет .
+В данный момент я занимаюсь:
+ разработкой бизнес приложений и сервисов web программированием на javascript, node.js, react.js, redux, blank  Контакты:
+ email: sclif13[собака]ya.ru skype: sclif13 telegram: @sclif13 instagram: sclif13  </description>
+    </item>
+    
+  </channel>
+</rss>

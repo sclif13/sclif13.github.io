@@ -1,0 +1,44 @@
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/main.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+{{ range .Site.Params.customJS }}
+<script src="{{ $.Site.BaseURL }}{{ . }}"></script>
+{{ end }}
+
+{{ if .Site.Params.enableGoogleAnalytics }}
+  {{ template "_internal/google_analytics.html" . }}
+{{ end }}
+
+{{ if .Site.Params.enableBaiduAnalytics }}
+<script>
+var baiduAnalytics = '{{ .Site.Params.baiduAnalytics }}';
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?" + baiduAnalytics;
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+{{ end }}
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(20519446, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/20519446" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->

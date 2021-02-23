@@ -1,0 +1,280 @@
+    <!DOCTYPE html>
+<html lang="ru-ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Sclif.pro">
+		<meta name="description" content="ИТ заметки">
+		<meta name="keywords" content="">
+		<meta name="generator" content="Hugo 0.61.0" />
+		<title>Костыль №1 Перевод DBF в XLS &middot; ИТ заметки</title>
+		<link rel="shortcut icon" href="//sclif.pro/images/favicon.ico">
+		<link rel="stylesheet" href="//sclif.pro/css/style.min.css">
+		<link rel="stylesheet" href="//sclif.pro/css/atom-one-light.min.css" media="all">
+		
+		<link rel="stylesheet" href="//sclif.pro//css/img.css">
+		
+
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all">
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='//sclif.pro/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+		<a href='//sclif.pro/projects'>Projects</a>
+	
+
+	
+		<a href='//sclif.pro/post'>Archive</a>
+	
+
+	
+		<a href='//sclif.pro/tags'>Tags</a>
+	
+
+	
+		<a href='//sclif.pro/about'>About</a>
+	
+
+	
+
+	
+</nav>
+
+
+        <section id="wrapper">
+            <article class="post">
+                <header>
+                    <h1>
+                        
+                            Костыль №1 Перевод DBF в XLS
+                        
+                    </h1>
+                    <h2 class="headline">
+                    Apr 2, 2012 16:04
+                    · 378 words
+                    · 2 minutes read
+                      <span class="tags">
+                      
+                      
+                          
+                              <a href="//sclif.pro/tags/dbf">DBF</a>
+                          
+                              <a href="//sclif.pro/tags/xls">XLS</a>
+                          
+                      
+                      
+                      </span>
+                    </h2>
+                </header>
+                <section id="post-body">
+                    <p>Решил поделиться своими костылями 🙂 Очень часто приходиться писать маленькие программки (костыли), которые выполняют какую-то рутинную работу.</p>
+<p>И так костыль №1. Появилась задача перевести кучу dbf файлов в xls с последующим редактированием. Конечно существуют программы, которые перекодируют dbf в xls, но они платные и не позволяют производить редактирования внутри файла. Поэтому выбор мой пал на Open Office и встроенный Basic.</p>
+<p>Данный макрос берет файлы dbf из папки C:\TEMP\detail\ и кладет XLS в C:\TEMP\detail\XLS\ . Вы можете поправить на свои пути.</p>
+<pre><code>Sub Main
+
+Dim NextFile As String
+NextFile = Dir(&quot;C:\TEMP\detail\*.dbf&quot;, 0)
+
+While NextFile &amp;lt;&amp;gt; &quot;&quot;
+
+cDbfFileToOpen = &quot;C:\TEMP\detail\&quot; + NextFile
+cXlsFileToSave = &quot;C:\TEMP\detail\XLS\&quot; + NextFile
+ResultString = InStr(1, cXlsFileToSave, &quot;dbf&quot;)
+Mid(cXlsFileToSave, ResultString, 3, &quot;XLS&quot;)
+
+'Открываем DBF
+cURLDBF = ConvertToURL( cDbfFileToOpen )
+oCalcDoc = StarDesktop.loadComponentFromURL( cURLDBF, &quot;_blank&quot;, 0, _
+Array( MakePropertyValue( &quot;FilterName&quot;, &quot;dBase&quot; ),_
+MakePropertyValue( &quot;FilterOptions&quot;, &quot;30&quot; )) )
+
+'Удаляем 2 первых столбца
+Sheet = oCalcDoc.Sheets(0)
+Sheet.Columns.removeByIndex(0, 2)
+
+'Удаляем еще 4 столбца
+Sheet.Columns.removeByIndex(1, 2)
+Sheet.Columns.removeByIndex(3, 1)
+Sheet.Columns.removeByIndex(6, 1)
+
+'Изменяем формат столбцов 7 и 8
+Dim NumberFormats As Object
+Dim NumberFormatString As String
+Dim NumberFormatId As Long
+Dim LocalSettings As New com.sun.star.lang.Locale
+
+LocalSettings.Language = &quot;ru&quot;
+LocalSettings.Country = &quot;ru&quot;
+
+NumberFormats = oCalcDoc.NumberFormats
+NumberFormatString = &quot;# ##0,00 [$руб.-419];[RED]-# ##0,00 [$руб.-419]&quot;
+
+NumberFormatId = NumberFormats.addNew(NumberFormatString, LocalSettings)
+
+Col = Sheet.Columns(7)
+Col.NumberFormat = NumberFormatId
+Col.OptimalWidth = True
+'Выравнивание столбца по центру
+Col.HoriJustify = com.sun.star.table.CellHoriJustify.CENTER
+
+Col = Sheet.Columns(8)
+Col.NumberFormat = NumberFormatId
+Col.OptimalWidth = True
+
+'Изменяем название столбцов
+Cell = Sheet.getCellByPosition(0, 0)
+Cell.String = &quot;Первый столбец&quot;
+
+Cell = Sheet.getCellByPosition(1, 0)
+Cell.String = &quot;Второй&quot;
+
+Cell = Sheet.getCellByPosition(2, 0)
+Cell.String = &quot;Третий&quot;
+
+Cell = Sheet.getCellByPosition(3, 0)
+Cell.String = &quot;Четвертый&quot;
+
+Cell = Sheet.getCellByPosition(4, 0)
+Cell.String = &quot;Пятый&quot;
+
+Cell = Sheet.getCellByPosition(5, 0)
+Cell.String = &quot;Шестой&quot;
+
+Cell = Sheet.getCellByPosition(6, 0)
+Cell.String = &quot;Седьмой&quot;
+
+Cell = Sheet.getCellByPosition(7, 0)
+Cell.String = &quot;Восьмой&quot;
+
+'Выставляем оптимальную ширину столбцов
+For I = 0 To 7
+Col = Sheet.Columns(I)
+Col.OptimalWidth = True
+Next I
+
+Col = Sheet.Columns(2)
+Col.Width = 5000
+
+'Сохраняем в XLS
+cURLXLS = ConvertToURL( cXlsFileToSave )
+oCalcDoc.storeToURL( cURLXLS, _
+Array( MakePropertyValue( &quot;FilterName&quot;, &quot;MS Excel 97&quot; ) ) )
+
+oCalcDoc.close( True )
+
+NextFile = Dir
+Wend
+
+End Sub
+
+Function MakePropertyValue( Optional cName As String, Optional uValue ) As com.sun.star.beans.PropertyValue
+Dim oPropertyValue As New com.sun.star.beans.PropertyValue
+If Not IsMissing( cName ) Then
+oPropertyValue.Name = cName
+EndIf
+If Not IsMissing( uValue ) Then
+oPropertyValue.Value = uValue
+EndIf
+MakePropertyValue() = oPropertyValue
+End Function
+</code></pre>
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://github.com/sclif13">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.instagram.com/sclif13/">
+        <i class="fa fa-instagram"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2020 <i class="fa fa-heart" aria-hidden="true"></i> Sclif.pro
+    
+    </p>
+    <p class="small">
+        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="http://nodejh.com">nodejh</a>
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="//sclif.pro/js/main.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+<script src="//sclif.pro//js/redirect.js"></script>
+
+
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-30560332-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+
+
+
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(20519446, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/20519446" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ 
+
+    </body>
+</html>

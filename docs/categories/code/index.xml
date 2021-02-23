@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Code on ИТ заметки</title>
+    <link>//sclif.pro/categories/code/</link>
+    <description>Recent content in Code on ИТ заметки</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-ru</language>
+    <lastBuildDate>Mon, 06 Apr 2015 17:35:12 +0000</lastBuildDate>
+    
+	<atom:link href="//sclif.pro/categories/code/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Django замена повторяющихся слэшей в url</title>
+      <link>//sclif.pro/post/2015-04-06-python-django-%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0-%D0%BF%D0%BE%D0%B2%D1%82%D0%BE%D1%80%D1%8F%D1%8E%D1%89%D0%B8%D1%85%D1%81%D1%8F-%D1%81%D0%BB%D1%8D%D1%88%D0%B5%D0%B8%CC%86-%D0%B2-url/</link>
+      <pubDate>Mon, 06 Apr 2015 17:35:12 +0000</pubDate>
+      
+      <guid>//sclif.pro/post/2015-04-06-python-django-%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0-%D0%BF%D0%BE%D0%B2%D1%82%D0%BE%D1%80%D1%8F%D1%8E%D1%89%D0%B8%D1%85%D1%81%D1%8F-%D1%81%D0%BB%D1%8D%D1%88%D0%B5%D0%B8%CC%86-%D0%B2-url/</guid>
+      <description>Возникла необходимость удалять слэши в url. Пример:
+http://example.com/// http://example.com/one//two// Решение довольно простое. В ursl.py пишем
+url(r&#39;\/{2,}&#39;, &#39;views.redirect_to&#39;), Тем самым производим поиск r’/{2,}’ слэшей от 2 и более. Далее совершаем замену на один слэш.
+import re def redirect_to(request): return redirect(re.sub(r&#39;\/{2,}&#39;, &#39;/&#39;, request.path)) P.S. Если используете nginx, то в конфиге в контексте http или server выставите merge_slashes off;
+Данная директива запрещает преобразование URI путём замены двух и более подряд идущих слэшей (“/”) на один.</description>
+    </item>
+    
+    <item>
+      <title>Решено: USSD запрос в linux c помощью huawei e1550 (Мегафон)</title>
+      <link>//sclif.pro/post/2013-03-07-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%BE-ussd-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81-%D0%B2-linux-c-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-huawei-e1550-%D0%BC%D0%B5%D0%B3%D0%B0%D1%84%D0%BE%D0%BD/</link>
+      <pubDate>Thu, 07 Mar 2013 06:48:25 +0000</pubDate>
+      
+      <guid>//sclif.pro/post/2013-03-07-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%BE-ussd-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81-%D0%B2-linux-c-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-huawei-e1550-%D0%BC%D0%B5%D0%B3%D0%B0%D1%84%D0%BE%D0%BD/</guid>
+      <description>Появилась необходимость контролировать баланс sim мегафона. Обычный ussd запрос *100# по каким-то причинам не захотел работать.
+#/usr/bin/ussd.pl -vi \*111\*1*2#
+#!/usr/bin/perluse Getopt::Std;use Device::Gsm::Pdu;use Text::Iconv;# defaults$opt_r = &amp;quot;/dev/ttyUSB2&amp;quot;;$opt_s = &amp;quot;/dev/ttyUSB0&amp;quot;;$conv = Text::Iconv-&amp;amp;gt;new(&#39;utf16be&#39;,&#39;utf8&#39;);my $USAGE = &amp;amp;lt;&amp;amp;lt;__EOU;Usage: $0 [-r input_port] [-s output_port] [-n] [-h] [-v] [-i] [-w] ussd_msgDescription:Send and receive 7-bit PDU-encoded USSD messages.Written and tested for Huawei E1550 GSM/UMTS USB modem.Options:-r port Port to receive data from.</description>
+    </item>
+    
+    <item>
+      <title>Решено: Net::SSH::Perl Can`t bind socket to port 1023</title>
+      <link>//sclif.pro/post/2012-04-02-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%BE-netsshperl-cant-bind-socket-to-port-1023/</link>
+      <pubDate>Mon, 02 Apr 2012 16:42:37 +0000</pubDate>
+      
+      <guid>//sclif.pro/post/2012-04-02-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%BE-netsshperl-cant-bind-socket-to-port-1023/</guid>
+      <description>Собрался написать не большой скрипт, который на удаленном сервере через ssh добавляет или удаляет правила iptables.Написал тестовый скрипт.
+use Net::SSH::Perl;my $host =&amp;quot;xx.xx.xx.xx&amp;quot;;my $user = &amp;quot;user&amp;quot;;my $pass = &amp;quot;paswd&amp;quot;;my $cmd = &amp;quot;uname -a&amp;quot;;my $ssh = Net::SSH::Perl-&amp;amp;gt;new ($host,protocol =&amp;amp;gt; 2,port =&amp;amp;gt; 22,debug =&amp;amp;gt; 1,);$ssh-&amp;amp;gt;login($user,$pass);my ($stdout, $stderr, $exit) = $ssh-&amp;amp;gt;cmd($cmd);print &amp;quot;$stdout&amp;quot;;Запустил один раз и он отработал нормально и сразу же второй раз.</description>
+    </item>
+    
+  </channel>
+</rss>

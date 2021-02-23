@@ -1,0 +1,235 @@
+    <!DOCTYPE html>
+<html lang="ru-ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Sclif.pro">
+		<meta name="description" content="ИТ заметки">
+		<meta name="keywords" content="">
+		<meta name="generator" content="Hugo 0.61.0" />
+		<title>Решено: USSD запрос в linux c помощью huawei e1550 (Мегафон) &middot; ИТ заметки</title>
+		<link rel="shortcut icon" href="//sclif.pro/images/favicon.ico">
+		<link rel="stylesheet" href="//sclif.pro/css/style.min.css">
+		<link rel="stylesheet" href="//sclif.pro/css/atom-one-light.min.css" media="all">
+		
+		<link rel="stylesheet" href="//sclif.pro//css/img.css">
+		
+
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all">
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='//sclif.pro/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+		<a href='//sclif.pro/projects'>Projects</a>
+	
+
+	
+		<a href='//sclif.pro/post'>Archive</a>
+	
+
+	
+		<a href='//sclif.pro/tags'>Tags</a>
+	
+
+	
+		<a href='//sclif.pro/about'>About</a>
+	
+
+	
+
+	
+</nav>
+
+
+        <section id="wrapper">
+            <article class="post">
+                <header>
+                    <h1>
+                        
+                            Решено: USSD запрос в linux c помощью huawei e1550 (Мегафон)
+                        
+                    </h1>
+                    <h2 class="headline">
+                    Mar 7, 2013 06:48
+                    · 274 words
+                    · 2 minutes read
+                      <span class="tags">
+                      
+                      
+                          
+                              <a href="//sclif.pro/tags/linux">linux</a>
+                          
+                      
+                      
+                      </span>
+                    </h2>
+                </header>
+                <section id="post-body">
+                    <p>Появилась необходимость контролировать баланс sim мегафона. Обычный ussd запрос *100# по каким-то причинам не захотел работать.</p>
+<p><code>#/usr/bin/ussd.pl -vi \*111\*1*2#</code></p>
+<pre><code>#!/usr/bin/perl
+
+use Getopt::Std;
+use Device::Gsm::Pdu;
+use Text::Iconv;
+
+# defaults
+$opt_r = &quot;/dev/ttyUSB2&quot;;
+$opt_s = &quot;/dev/ttyUSB0&quot;;
+$conv = Text::Iconv-&amp;gt;new('utf16be','utf8');
+my $USAGE = &amp;lt;&amp;lt;__EOU;
+
+Usage: $0 [-r input_port] [-s output_port] [-n] [-h] [-v] [-i] [-w] ussd_msg
+
+Description:
+  Send and receive 7-bit PDU-encoded USSD messages.
+  Written and tested for Huawei E1550 GSM/UMTS USB modem.
+
+Options:
+  -r port   Port to receive data from. Default: $opt_r
+  -s port   Port to send AT commands to. Default: $opt_s
+  -n        Do not send any data to port. Useful with -v.
+  -h        Print this help.
+  -v        Be verbose.
+  -i	 Use iconv [from utf16be to utf8] to reply
+  -w reply workaround (try it if script can not decode reply)
+__EOU
+
+sub HELP_MESSAGE {print &quot;$USAGE\n&quot;; exit;}
+sub VERSION_MESSAGE {};
+getopts ('r:s:hnviw');
+HELP_MESSAGE() and exit if (! $ARGV[0]) or defined($opt_h);
+
+print &quot;USSD MSG: $ARGV[0]\n&quot; if $opt_v;
+my $ussd_req = Device::Gsm::Pdu::encode_text7($ARGV[0]);
+$ussd_req =~ s/^..//;
+print &quot;PDU ENCODED: $ussd_req\n&quot; if $opt_v;
+
+my $ussd_reply;
+if (! $opt_n) {
+    open (SENDPORT, '+&amp;lt;', $opt_s) or die &quot;Can't open '$opt_s': $!\n&quot;;
+    print SENDPORT 'AT+CUSD=1,',$ussd_req,&quot;,15\r\n&quot;;
+    close SENDPORT;
+    open (RCVPORT, $opt_r) or die &quot;Can't open '$opt_r': $!\n&quot;;
+    print &quot;Waiting for USSD reply...\n&quot; if $opt_v;
+    while () {
+        chomp;
+        die &quot;USSD ERROR\n&quot; if $_ eq &quot;+CUSD: 2&quot;;
+        if (/^\+CUSD: 0,\&quot;([A-F0-9]+)\&quot;/) {
+            $ussd_reply = $1;
+            print &quot;PDU USSD REPLY: $ussd_reply\n&quot; if $opt_v;
+            last;
+        }
+        print &quot;Got unknown USSD message: $_\n&quot; if /^\+CUSD:/ and $opt_v;
+    }
+}
+
+if ($ussd_reply) {
+	  $iconved_reply = $conv-&amp;gt;convert(pack('H*', $ussd_reply));
+	  $decoded_ussd_reply = Device::Gsm::Pdu::decode_text7('00'.$ussd_reply);
+      print STDOUT &quot;USSD REPLY: $decoded_ussd_reply\n&quot; if not $opt_i;
+	  print STDOUT &quot;$iconved_reply\n&quot; if $opt_i;
+} else {
+    print &quot;No USSD reply!\n&quot;;
+}
+</code></pre>
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://github.com/sclif13">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.instagram.com/sclif13/">
+        <i class="fa fa-instagram"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2020 <i class="fa fa-heart" aria-hidden="true"></i> Sclif.pro
+    
+    </p>
+    <p class="small">
+        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="http://nodejh.com">nodejh</a>
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="//sclif.pro/js/main.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+<script src="//sclif.pro//js/redirect.js"></script>
+
+
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-30560332-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+
+
+
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(20519446, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/20519446" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ 
+
+    </body>
+</html>

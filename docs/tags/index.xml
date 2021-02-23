@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on ИТ заметки</title>
+    <link>//sclif.pro/tags/</link>
+    <description>Recent content in Tags on ИТ заметки</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-ru</language>
+    <lastBuildDate>Sat, 15 Jun 2019 12:33:54 +0500</lastBuildDate>
+    
+	<atom:link href="//sclif.pro/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>asterisk</title>
+      <link>//sclif.pro/tags/asterisk/</link>
+      <pubDate>Sat, 15 Jun 2019 12:33:54 +0500</pubDate>
+      
+      <guid>//sclif.pro/tags/asterisk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>audio</title>
+      <link>//sclif.pro/tags/audio/</link>
+      <pubDate>Sat, 15 Jun 2019 12:33:54 +0500</pubDate>
+      
+      <guid>//sclif.pro/tags/audio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Freeswitch</title>
+      <link>//sclif.pro/tags/freeswitch/</link>
+      <pubDate>Sat, 15 Jun 2019 12:33:54 +0500</pubDate>
+      
+      <guid>//sclif.pro/tags/freeswitch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>react</title>
+      <link>//sclif.pro/tags/react/</link>
+      <pubDate>Sat, 15 Jun 2019 12:33:54 +0500</pubDate>
+      
+      <guid>//sclif.pro/tags/react/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Voip</title>
+      <link>//sclif.pro/tags/voip/</link>
+      <pubDate>Sat, 15 Jun 2019 12:33:54 +0500</pubDate>
+      
+      <guid>//sclif.pro/tags/voip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web</title>
+      <link>//sclif.pro/tags/web/</link>
+      <pubDate>Sat, 15 Jun 2019 12:33:54 +0500</pubDate>
+      
+      <guid>//sclif.pro/tags/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>projects</title>
+      <link>//sclif.pro/tags/projects/</link>
+      <pubDate>Sat, 08 Jul 2017 12:38:48 +0500</pubDate>
+      
+      <guid>//sclif.pro/tags/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>//sclif.pro/tags/about/</link>
+      <pubDate>Sat, 25 Feb 2017 00:06:48 +0500</pubDate>
+      
+      <guid>//sclif.pro/tags/about/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>//sclif.pro/tags/docker/</link>
+      <pubDate>Sun, 13 Sep 2015 08:41:19 +0000</pubDate>
+      
+      <guid>//sclif.pro/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>//sclif.pro/tags/linux/</link>
+      <pubDate>Sun, 13 Sep 2015 08:41:19 +0000</pubDate>
+      
+      <guid>//sclif.pro/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sip</title>
+      <link>//sclif.pro/tags/sip/</link>
+      <pubDate>Sun, 13 Sep 2015 08:41:19 +0000</pubDate>
+      
+      <guid>//sclif.pro/tags/sip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WEBRTC</title>
+      <link>//sclif.pro/tags/webrtc/</link>
+      <pubDate>Sun, 13 Sep 2015 08:41:19 +0000</pubDate>
+      
+      <guid>//sclif.pro/tags/webrtc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>django</title>
+      <link>//sclif.pro/tags/django/</link>
+      <pubDate>Mon, 06 Apr 2015 17:35:12 +0000</pubDate>
+      
+      <guid>//sclif.pro/tags/django/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>//sclif.pro/tags/python/</link>
+      <pubDate>Mon, 06 Apr 2015 17:35:12 +0000</pubDate>
+      
+      <guid>//sclif.pro/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>billing</title>
+      <link>//sclif.pro/tags/billing/</link>
+      <pubDate>Mon, 22 Dec 2014 20:57:23 +0000</pubDate>
+      
+      <guid>//sclif.pro/tags/billing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>opensips</title>
+      <link>//sclif.pro/tags/opensips/</link>
+      <pubDate>Mon, 22 Dec 2014 20:57:23 +0000</pubDate>
+      
+      <guid>//sclif.pro/tags/opensips/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>radius</title>
+      <link>//sclif.pro/tags/radius/</link>
+      <pubDate>Mon, 22 Dec 2014 20:57:23 +0000</pubDate>
+      
+      <guid>//sclif.pro/tags/radius/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Perl</title>
+      <link>//sclif.pro/tags/perl/</link>
+      <pubDate>Mon, 24 Jun 2013 06:52:40 +0000</pubDate>
+      
+      <guid>//sclif.pro/tags/perl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>calc</title>
+      <link>//sclif.pro/tags/calc/</link>
+      <pubDate>Mon, 02 Apr 2012 16:23:14 +0000</pubDate>
+      
+      <guid>//sclif.pro/tags/calc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>openoffice</title>
+      <link>//sclif.pro/tags/openoffice/</link>
+      <pubDate>Mon, 02 Apr 2012 16:23:14 +0000</pubDate>
+      
+      <guid>//sclif.pro/tags/openoffice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DBF</title>
+      <link>//sclif.pro/tags/dbf/</link>
+      <pubDate>Mon, 02 Apr 2012 16:11:55 +0000</pubDate>
+      
+      <guid>//sclif.pro/tags/dbf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>XLS</title>
+      <link>//sclif.pro/tags/xls/</link>
+      <pubDate>Mon, 02 Apr 2012 16:11:55 +0000</pubDate>
+      
+      <guid>//sclif.pro/tags/xls/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

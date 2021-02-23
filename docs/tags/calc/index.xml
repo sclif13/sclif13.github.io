@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>calc on ИТ заметки</title>
+    <link>//sclif.pro/tags/calc/</link>
+    <description>Recent content in calc on ИТ заметки</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-ru</language>
+    <lastBuildDate>Mon, 02 Apr 2012 16:23:14 +0000</lastBuildDate>
+    
+	<atom:link href="//sclif.pro/tags/calc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Оо трюки</title>
+      <link>//sclif.pro/post/2012-04-02-%D0%BE%D0%BE-%D1%82%D1%80%D1%8E%D0%BA%D0%B8/</link>
+      <pubDate>Mon, 02 Apr 2012 16:23:14 +0000</pubDate>
+      
+      <guid>//sclif.pro/post/2012-04-02-%D0%BE%D0%BE-%D1%82%D1%80%D1%8E%D0%BA%D0%B8/</guid>
+      <description>Пришлось редактировать большую таблицу в OpenOffice и вот какие функции мне пригодились:
+1. Как добавить в начало ячейки символ для всего столбца? Пишем следующую формулу =&amp;quot;№&amp;rdquo;&amp;amp;A1, где № — это наш символ, A1 — соответственно наша ячейка, а дальше растягиваем эту формулу сколько надо.
+ 2. Как разбить текст вида 1,2,3,4,5 в одной ячейки по столбцам? Заходим в меню Данные-&amp;gt;Текст по столбцам… и там выбираем разделитель, в нашем случае запятая. Тут же видим что из этого получилось.</description>
+    </item>
+    
+  </channel>
+</rss>

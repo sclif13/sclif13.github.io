@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>radius on ИТ заметки</title>
+    <link>//sclif.pro/tags/radius/</link>
+    <description>Recent content in radius on ИТ заметки</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-ru</language>
+    <lastBuildDate>Mon, 22 Dec 2014 20:57:23 +0000</lastBuildDate>
+    
+	<atom:link href="//sclif.pro/tags/radius/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Opensips &#43; Netup UTM5</title>
+      <link>//sclif.pro/post/2014-12-23-opensips-netup-utm5/</link>
+      <pubDate>Mon, 22 Dec 2014 20:57:23 +0000</pubDate>
+      
+      <guid>//sclif.pro/post/2014-12-23-opensips-netup-utm5/</guid>
+      <description>В преддверии нового 2015 года решил поделиться своим опытом и опытом моего коллеги Евгения.
+Уже давно у меня были попытки связать Kamailio/Opensips с различными биллингами с помощью протокола Radius. Стандартные модули позволяют это сделать, но не могут прочитать ответ от radius сервера, потому как требуют ответ в формате SIP-AVP. И вот начиная с версии 1.6 в opensips появился модуль aaa_radius. Сложность использования данного модуля в том, что нам необходимо самим настроить radius пакет Access-Request.</description>
+    </item>
+    
+  </channel>
+</rss>

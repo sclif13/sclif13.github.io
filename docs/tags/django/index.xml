@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>django on ИТ заметки</title>
+    <link>//sclif.pro/tags/django/</link>
+    <description>Recent content in django on ИТ заметки</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-ru</language>
+    <lastBuildDate>Mon, 06 Apr 2015 17:35:12 +0000</lastBuildDate>
+    
+	<atom:link href="//sclif.pro/tags/django/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Django замена повторяющихся слэшей в url</title>
+      <link>//sclif.pro/post/2015-04-06-python-django-%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0-%D0%BF%D0%BE%D0%B2%D1%82%D0%BE%D1%80%D1%8F%D1%8E%D1%89%D0%B8%D1%85%D1%81%D1%8F-%D1%81%D0%BB%D1%8D%D1%88%D0%B5%D0%B8%CC%86-%D0%B2-url/</link>
+      <pubDate>Mon, 06 Apr 2015 17:35:12 +0000</pubDate>
+      
+      <guid>//sclif.pro/post/2015-04-06-python-django-%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0-%D0%BF%D0%BE%D0%B2%D1%82%D0%BE%D1%80%D1%8F%D1%8E%D1%89%D0%B8%D1%85%D1%81%D1%8F-%D1%81%D0%BB%D1%8D%D1%88%D0%B5%D0%B8%CC%86-%D0%B2-url/</guid>
+      <description>Возникла необходимость удалять слэши в url. Пример:
+http://example.com/// http://example.com/one//two// Решение довольно простое. В ursl.py пишем
+url(r&#39;\/{2,}&#39;, &#39;views.redirect_to&#39;), Тем самым производим поиск r’/{2,}’ слэшей от 2 и более. Далее совершаем замену на один слэш.
+import re def redirect_to(request): return redirect(re.sub(r&#39;\/{2,}&#39;, &#39;/&#39;, request.path)) P.S. Если используете nginx, то в конфиге в контексте http или server выставите merge_slashes off;
+Данная директива запрещает преобразование URI путём замены двух и более подряд идущих слэшей (“/”) на один.</description>
+    </item>
+    
+  </channel>
+</rss>

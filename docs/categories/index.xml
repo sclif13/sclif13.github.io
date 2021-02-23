@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on ИТ заметки</title>
+    <link>//sclif.pro/categories/</link>
+    <description>Recent content in Categories on ИТ заметки</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-ru</language>
+    <lastBuildDate>Sat, 15 Jun 2019 12:33:54 +0500</lastBuildDate>
+    
+	<atom:link href="//sclif.pro/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>react</title>
+      <link>//sclif.pro/categories/react/</link>
+      <pubDate>Sat, 15 Jun 2019 12:33:54 +0500</pubDate>
+      
+      <guid>//sclif.pro/categories/react/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>y</title>
+      <link>//sclif.pro/categories/y/</link>
+      <pubDate>Sat, 08 Jul 2017 12:38:48 +0500</pubDate>
+      
+      <guid>//sclif.pro/categories/y/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Заметки</title>
+      <link>//sclif.pro/categories/%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B8/</link>
+      <pubDate>Sun, 13 Sep 2015 08:41:19 +0000</pubDate>
+      
+      <guid>//sclif.pro/categories/%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Code</title>
+      <link>//sclif.pro/categories/code/</link>
+      <pubDate>Mon, 06 Apr 2015 17:35:12 +0000</pubDate>
+      
+      <guid>//sclif.pro/categories/code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Разное</title>
+      <link>//sclif.pro/categories/%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D0%B5/</link>
+      <pubDate>Thu, 12 Mar 2015 18:12:31 +0000</pubDate>
+      
+      <guid>//sclif.pro/categories/%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D0%B5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Костыли</title>
+      <link>//sclif.pro/categories/%D0%BA%D0%BE%D1%81%D1%82%D1%8B%D0%BB%D0%B8/</link>
+      <pubDate>Sat, 14 Jul 2012 11:53:19 +0000</pubDate>
+      
+      <guid>//sclif.pro/categories/%D0%BA%D0%BE%D1%81%D1%82%D1%8B%D0%BB%D0%B8/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

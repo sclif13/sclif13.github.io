@@ -1,0 +1,205 @@
+    <!DOCTYPE html>
+<html lang="ru-ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Sclif.pro">
+		<meta name="description" content="ИТ заметки">
+		<meta name="keywords" content="">
+		<meta name="generator" content="Hugo 0.61.0" />
+		<title>Docker Asterisk WebRTC &middot; ИТ заметки</title>
+		<link rel="shortcut icon" href="//sclif.pro/images/favicon.ico">
+		<link rel="stylesheet" href="//sclif.pro/css/style.min.css">
+		<link rel="stylesheet" href="//sclif.pro/css/atom-one-light.min.css" media="all">
+		
+		<link rel="stylesheet" href="//sclif.pro//css/img.css">
+		
+
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all">
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='//sclif.pro/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+		<a href='//sclif.pro/projects'>Projects</a>
+	
+
+	
+		<a href='//sclif.pro/post'>Archive</a>
+	
+
+	
+		<a href='//sclif.pro/tags'>Tags</a>
+	
+
+	
+		<a href='//sclif.pro/about'>About</a>
+	
+
+	
+
+	
+</nav>
+
+
+        <section id="wrapper">
+            <article class="post">
+                <header>
+                    <h1>
+                        
+                            Docker Asterisk WebRTC
+                        
+                    </h1>
+                    <h2 class="headline">
+                    Sep 13, 2015 08:41
+                    · 157 words
+                    · 1 minute read
+                      <span class="tags">
+                      
+                      
+                          
+                              <a href="//sclif.pro/tags/asterisk">Asterisk</a>
+                          
+                              <a href="//sclif.pro/tags/docker">Docker</a>
+                          
+                              <a href="//sclif.pro/tags/linux">linux</a>
+                          
+                              <a href="//sclif.pro/tags/sip">sip</a>
+                          
+                              <a href="//sclif.pro/tags/voip">Voip</a>
+                          
+                              <a href="//sclif.pro/tags/webrtc">WEBRTC</a>
+                          
+                      
+                      
+                      </span>
+                    </h2>
+                </header>
+                <section id="post-body">
+                    <p>После нескольких часов экспериментов я создал docker <!-- raw HTML omitted -->image<!-- raw HTML omitted --> на основе Centos 6 и Asterisk 13.5.0. Вышел он довольно увесистый в 1.3 Гб. Собран с поддержкой WebRTC.</p>
+<p>Как пользоваться?</p>
+<p>Качаем готовый image c <!-- raw HTML omitted -->hub.docker.com<!-- raw HTML omitted --> :</p>
+<pre><code>docker pull sclif13/docker-asterisk13-webrtc
+</code></pre><p>Затем необходимо создать docker контейнер:</p>
+<pre><code>docker run -d -t --name=asterisk -p 5060:5060/udp \
+       -p 10000-10200:10000-10200/udp \
+       -p 8088:8088 \
+       -v /data/asterisk/etc:/etc/asterisk \
+       sclif13/docker-asterisk13-webrtc
+</code></pre><p>Указываем порты 5060 для SIP, 10000-10200 для RTP, 8088  для webrtc. Так же если необходимо вынести конфиги наружу указываем папку где они будут лежать в вашей системе(/data/asterisk/etc) и в самом docker контейнере (/etc/asterisk)</p>
+<p>После того как будет создан и запущен ваш docker контейнер нужно его сконфигурировать и для начала скопировать стандартные конфиги.</p>
+<pre><code>docker exec  -it asterisk bash
+cd /usr/src/asterisk-*
+make samples
+exit
+</code></pre><p>Теперь в вашей папке(/data/asterisk/etc) должны появиться конфиги. Далее гуглим как настроить этот самый WebRTC для Asterisk. Чтобы попасть в консоль самого Asterisk выполняем следующую команду:</p>
+<pre><code>docker exec  -it asterisk asterisk -rvvvvvvvvvvvvvvvvvvc
+</code></pre><p>P.S. Обновил asterisk до 13.14.0</p>
+<a
+  class="github-button"
+  href="https://github.com/sclif13/docker-asterisk13-webrtc"
+  data-size="large"
+  aria-label="Star sclif13/docker-asterisk13-webrtc on GitHub"
+  >Star</a
+>
+
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://github.com/sclif13">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+    <a class="symbol" href="https://www.instagram.com/sclif13/">
+        <i class="fa fa-instagram"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2020 <i class="fa fa-heart" aria-hidden="true"></i> Sclif.pro
+    
+    </p>
+    <p class="small">
+        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="http://nodejh.com">nodejh</a>
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="//sclif.pro/js/main.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+<script src="//sclif.pro//js/redirect.js"></script>
+
+
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-30560332-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+
+
+
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(20519446, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/20519446" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ 
+
+    </body>
+</html>
